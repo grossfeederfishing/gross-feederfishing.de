@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grossfeederfishing Webshop</title>
+    <style>
+        
+    body {
+            background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZndjaXI3dHkwbDl4cjd6dmt3emo3NzRvN25neTdzb3JhaWV0YmI4NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VyAwMGQB7q3oA/giphy.webp');
+             background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        header {
+            background-color: rgba(13, 0, 115, 0.8);
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            background-color: rgba(51, 51, 51, 0.8); /* Átlátszó háttér a navigáción */
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            z-index: 1000;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown li {
+            width: 200px;
+            position: relative; /* A belső dropdownhoz */
+        }
+
+        .dropdown li:hover .dropdown {
+            display: block;
+            left: 100%; /* Jobbra helyezés */
+            top: 0; /* Felső helyzet */
+        }
+        .content {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+        }
+        .product {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        } 
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Grossfeederfishing</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Webshop ▼ </a>
+                <ul class="dropdown">
+                    <li><a href="botok">Angelrute  ▼ </a></li> <!-- horgászbotok minden kategoria-->
+                    <ul class="dropdown">
+                        <li><a href="Boiliesrute.html">Boiliesrute</a></li>
+                        <li><a href="horgaszbotok2.html">Spinnrute</a></li>
+                        <li><a href="horgaszbotok2.html">Feederrute</a></li>
+                        <li><a href="horgaszbotok2.html">Pickerrute</a></li>
+                        <li><a href="horgaszbotok2.html">Matchrute</a></li>
+                        <li><a href="horgaszbotok2.html">Walsrute</a></li>
+                        <li><a href="horgaszbotok2.html">Bolognarute</a></li>
+                        <li><a href="horgaszbotok2.html">Stapelrute</a></li>
+                        <li><a href="horgaszbotok2.html">Teleskoprute</a></li>
+                        <li><a href="horgaszbotok2.html">Spitzrute</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Angelrolle ▼ </a><!--horgászorsok minden kategoria-->
+                    <ul class="dropdown">
+                        <li><a href="Distanzwerferrolle.html">Distanzwerferrolle</a></li>
+                        <li><a href="Match-Feederrolle.html">Match-Feederrolle</a></li>
+                        <li><a href="Spinnrolle.html">Spinnrolle</a></li>
+                        <li><a href="Welsrolle.html">Welsrolle</a></li>
+                        <li><a href="Greiferbremserolle.html">Greiferbremserolle</a></li>
+                        <li><a href="Hintenbremserolle.html">Hintenbremserolle</a></li>
+                        <li><a href="Vornebremserolle.html">Vornebremserolle</a></li>
+                        <li><a href="Baitscast.html">Baitscast</a></li>
+                         </ul>
+                     </li>
+                 <li>
+            <a href="#">Angelschnur ▼ </a><!-- zsinor -->
+            <ul class="dropdown">
+                <li><a href="orsok.html">Boilies</a></li>
+                <li><a href="orsok2.html">Geflochten</a></li>
+                <li><a href="orsok2.html">Frontline</a></li>
+                <li><a href="orsok2.html">Feeder</a></li>
+                <li><a href="orsok2.html">Power-Reifen</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Rufzeichen ▼ </a><!--kapásjelzo-->
+            <ul class="dropdown">
+                <li><a href="orsok.html">Swinger</a></li>
+                <li><a href="orsok2.html">Elektrisch</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Halten für Stöbe ▼ </a><!--bottarto-->
+            <ul class="dropdown">
+                <li><a href="orsok.html">Stock-Halterung</a></li>
+                <li><a href="orsok2.html">Rod-Pod</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Zubehört ▼ </a>
+            <ul class="dropdown">
+                <li><a href="orsok.html">Orso 1</a></li>
+                <li><a href="orsok2.html">Orso 2</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Kleidung ▼ </a>
+            <ul class="dropdown">
+                <li><a href="Kleidung">Pullover</a></li>
+                <li><a href="Kleidung">Jacke</a></li>
+                <li><a href="Kleidung">T-shirt </a></li>
+                <li><a href="Kleidung">Regenjacke</a></li>
+                <li><a href="Kleidung">Regenhose</a></li>
+
+            </ul>
+        </li>
+        <li>
+            <a href="#">Sett ▼ </a>
+            <ul class="dropdown">
+                <li><a href="orsok.html">Orso 1</a></li>
+                <li><a href="orsok2.html">Orso 2</a></li>
+                       </ul>
+                     </li>
+                <li><a href="csalik.html">Csalik</a></li>
+               </ul>
+             </li>
+                   <li><a href="kapcsolatok.html">Kapcsolatok</a></li>
+                   <li><a href="blog.html">Blog</a></li>
+                  <li>
+                  <a href="kosar.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i> Kosár </a>
+                 </li>
+             </ul>
+    </nav>
+    <!--<div class="content">
+        <h2>Termékek</h2>
+        <iframe src="termekek.html" style="width: 100%; height: 400px; border: none;"></iframe>
+    </div>
+        
+        <div class="product">
+            <h3>Horgászbot 1</h3>
+            <p>Leírás a horgászbotról. Ez egy kiváló minőségű horgászbot, amely a legjobb teljesítményt nyújt a horgászok számára.</p>
+            <p>Ár: 15,000 HUF</p>
+            <button onclick="addToCart('Horgászbot 1', 15000)">Kosárba helyezés</button>
+        </div>
+        
+        <div class="product">
+            <h3>Horgászbot 2</h3>
+            <p>Leírás a horgászbotról. Ez a bot különösen alkalmas hosszú távú horgászatra.</p>
+            <p>Ár: 20,000 HUF</p>
+            <button onclick="addToCart('Horgászbot 2', 20000)">Kosárba helyezés</button>
+        </div>
+        
+        <div class="product">
+            <h3>Horgászbot 3</h3>
+            <p>Leírás a horgászbotról. Az ideális választás kezdőknek és tapasztalt horgászoknak egyaránt.</p>
+            <p>Ár: 18,000 HUF</p>
+            <button onclick="addToCart('Horgászbot 3', 18000)">Kosárba helyezés</button>
+        </div>
+        
+        <div class="product">
+            <h3>Horgászbot 4</h3>
+            <p>Leírás a horgászbotról. Robusztus és tartós, tökéletes nagy halakhoz.</p>
+            <p>Ár: 25,000 HUF</p>
+            <button onclick="addToCart('Horgászbot 4', 25000)">Kosárba helyezés</button>
+        </div>
+    
+         További termékek itt -->
+    </div>
+    <script>
+        let cart = [];
+
+        function addToCart(productName, price) {
+            cart.push({ name: productName, price: price });
+            alert(`${productName} hozzáadva a kosárhoz. Ár: ${price} HUF`);
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            const cartIcon = document.querySelector('.cart-icon');
+            cartIcon.innerHTML = `<i class="fas fa-shopping-cart"></i> Kosár (${cart.length})`;
+        }
+
+        function viewCart() {
+            // Kosár megtekintés funkció, amit később megvalósíthatsz
+            alert("Kosár megtekintése: " + JSON.stringify(cart));
+        }
+    </script>
+</body>
+</html>
